@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experiencias interactivas | PeopleConnected</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Lora:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f3ed;--paper:#fffdfa;--ink:#282522;--muted:#6d6259;--accent:#856855;--line:#e4d9cc;--soft:#eee6dc}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 'League Spartan',Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+body:before{content:"";height:7px;background:linear-gradient(90deg,#876b57,#d5b9a6,#876b57)}
+.wrap{width:min(100% - 40px,1000px);margin:0 auto;flex:1}
+header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:30px 0}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:21px;letter-spacing:-.5px}
+.mark{width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:800}
+.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.hero{padding:40px 0 36px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(38px,6vw,64px);font-weight:700;line-height:1.04;letter-spacing:-.035em;margin:16px 0 18px;max-width:760px}
+h1 em{font-family:'Lora',Georgia,serif;font-weight:400;color:var(--accent)}
+.lead{font-size:19px;color:var(--muted);max-width:620px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding:10px 0 60px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:30px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:10px;box-shadow:0 14px 45px #57473510;transition:transform .18s,border-color .18s,box-shadow .18s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 20px 55px #5747351c}
+.card:focus-visible{outline:3px solid #b7a086;outline-offset:3px}
+.num{font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--accent)}
+.card h2{font-size:26px;line-height:1.15;letter-spacing:-.02em;margin:4px 0 0}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip{font-size:12px;border:1px solid var(--line);background:var(--soft);border-radius:30px;padding:5px 11px;color:#5d5249}
+.go{margin-top:auto;padding-top:14px;font-weight:700;color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:22px 0 30px;color:#7b7169;font-size:13px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+footer a{color:inherit}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.tag{display:none}.card{padding:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="mark">PC.</span>PeopleConnected</div>
+    <span class="tag">Seguí desafiándote.</span>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">Experiencias interactivas</span>
+    <h1>Herramientas para tu <em>próximo paso</em></h1>
+    <p class="lead">Cuatro recursos breves para reflexionar sobre tu perfil, explorar oportunidades y prepararte para el mundo laboral.</p>
+  </section>
+
+  <main class="grid">
+    <a class="card" href="cuestionario-profesional.html">
+      <span class="num">01 · Desarrollo profesional</span>
+      <h2>¿Cuál es tu próximo paso profesional?</h2>
+      <p>Un cuestionario para reflexionar sobre tu trayectoria, tus objetivos y los desafíos que querés afrontar.</p>
+      <div class="meta"><span class="chip">5 preguntas</span><span class="chip">2 minutos</span></div>
+      <span class="go">Comenzar →</span>
+    </a>
+    <a class="card" href="mapa-oportunidades.html">
+      <span class="num">02 · Primer empleo</span>
+      <h2>Mapa de oportunidades</h2>
+      <p>Descubrí qué tipos de trabajo pueden acompañar tu estilo de vida según tus prioridades y modalidad.</p>
+      <div class="meta"><span class="chip">Filtros interactivos</span><span class="chip">1 minuto</span></div>
+      <span class="go">Explorar →</span>
+    </a>
+    <a class="card" href="diagnostico-cv.html">
+      <span class="num">03 · Primer empleo</span>
+      <h2>Diagnóstico inicial de CV</h2>
+      <p>Identificá qué está funcionando bien en tu CV y qué podrías mejorar para tu primer trabajo.</p>
+      <div class="meta"><span class="chip">3 pasos</span><span class="chip">2 minutos</span></div>
+      <span class="go">Diagnosticar →</span>
+    </a>
+    <a class="card" href="desafio-insercion-laboral.html">
+      <span class="num">04 · Instituciones educativas</span>
+      <h2>Una experiencia para lo que viene</h2>
+      <p>Un desafío de tres niveles: reconocé habilidades, armá tu perfil y practicá una entrevista.</p>
+      <div class="meta"><span class="chip">3 niveles</span><span class="chip">300 puntos</span></div>
+      <span class="go">Jugar →</span>
+    </a>
+  </main>
+</div>
+<div class="wrap">
+  <footer>
+    <span>PeopleConnected · Prototipos académicos de experiencias interactivas</span>
+    <a href="https://www.peopleconnectedrh.com/" target="_blank" rel="noopener noreferrer">www.peopleconnectedrh.com ↗</a>
+  </footer>
+</div>
+</body>
+</html>
